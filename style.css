@@ -53,8 +53,13 @@ a {
 
 .col{
 	width: 30%;
-	margin-bottom: 20px;
+	margin-bottom: 50px;
 	background-color: darkmagenta;
+}
+
+.col:hover{
+	transform:scaleX(1.03) scaleY(1.03);
+	animation: ease-in-out cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
 .col p{

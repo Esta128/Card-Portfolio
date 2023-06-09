@@ -1,0 +1,153 @@
+/* PC view */
+
+
+
+body{
+	margin: 0;
+	font-family: 'Asap', sans-serif;
+	color: white;
+	background-color: #EBEBEB;
+}
+
+.container{
+	min-height: 500px;
+	max-width: 1024px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-top: 140px;
+
+}
+
+.header-container{
+	background-color: rgba(71,71,71,1.00);
+	min-height: 100px;;
+	position: fixed;
+	width: 100%;
+}
+
+
+header{
+	max-width: 1024px;
+	/*background-color: aqua;*/
+	min-height: 100px;
+	margin: 0 auto;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	 
+}
+	
+
+.navbutton{
+	padding: 6px 11px;
+	border: 1px solid white;
+	margin-left: 12px;
+}
+
+.col{
+	width: 30%;
+	margin-bottom: 20px;
+	background-color: darkmagenta;
+}
+
+.col p{
+	font-size: 0.875rem;
+	padding: 20px 25px;
+	line-height: 1.25rem;
+}
+
+.hide-desktop-only{
+	display: none;
+}
+
+.col img{
+	width: 100%;
+	height: auto;
+}
+
+.col p::first-line{
+	font-weight:700; 
+}
+
+.mob-wrapper{
+	display: none;
+}
+	
+	
+
+/* The website will take instructs from this bracete style below for TABLET VIEW instead of PC view */
+@media (max-width: 768px){
+	
+	
+.col{width: 45%;}
+	
+.hide-desktop-only{
+	display: block;
+}
+
+/* This removes the excessive space btw the header and other body */
+.container{
+		 padding-top: 40px;
+	 }
+	
+/* TThis makes the header not fixed on the tablet and mobile view*/
+	 .header-container{
+		 position: relative;
+	 }
+
+/* TThis makes it in a block form */
+	 
+	 .logo{
+		padding-left: 20px;
+	 }
+	 
+	nav{
+		display:none;
+	}
+	 
+	 nav a {
+		 display: block;
+	 }
+	 
+	/* TThis removes the nav button excess space by the left */
+	 .navbutton1{
+		 display: block;
+		 background-color: darkmagenta;
+		 padding: 15px 30px;
+		 margin-left: -70px;
+		 text-align: center;
+		 border-bottom: 1px solid white;
+	 }
+	
+	.mob-wrapper{
+		display: block;
+		padding-right: 30px;
+	}
+	
+	.toggle{
+		width: 40px;
+		display: block;
+	}
+	
+	.mob-nav{
+		display: none;
+		position: absolute;
+		padding-top: 10px;
+	}
+
+}
+
+/* The website will take instructs from this bracete style below for MOBILE VIEW instead of PC view */
+ @media (max-width: 500px){
+	
+	 .col{width: 100%;}
+	 
+}
+	 
